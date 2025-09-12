@@ -230,6 +230,46 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('form');
+  const loader = document.getElementById('loader');
+
+  function showSuccessMessage() {
+    const message = document.getElementById('successMessage');
+    message.classList.add('show');
+
+    setTimeout(() => {
+      message.classList.remove('show');
+    }, 3000); // 3 seconds
+  }
+
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // prevent default form submission
+    form.classList.toggle("d-none")
+    loader.classList.toggle("d-none")
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData
+    })
+    .then(res => res.text())
+    .then(data => {
+     
+      console.log(data);
+      form.reset();
+      form.classList.toggle("d-none")
+      loader.classList.toggle("d-none")
+      showSuccessMessage();
+    })
+    .catch(err => {
+      form.classList.toggle("d-none")
+      loader.classList.toggle("d-none")
+      alert("Submission failed.");
+      console.error(err);
+    });
+  });
   
   document.addEventListener("scroll", () => {
     const nav = document.getElementById("mainNav");
@@ -252,4 +292,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-  

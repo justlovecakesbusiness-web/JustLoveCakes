@@ -166,7 +166,7 @@
         </div>
       <div class="overflow-hidden mt-2 mt-md-1" >
             <div class="fluid-container px-3 px-md-5">
-                <div class="row align-items-center" data-aos="zoom-in-right">
+                <div class="row align-items-center" data-aos="zoom-in-up">
                     <!-- Image: only visible on small screens -->
                     <div class="col-12 d-block d-md-none">
                         <figure class="d-flex align-items-center justify-content-center noselect">
@@ -243,42 +243,25 @@
           <div class="row justify-content-center py-5">
               <div class="col-md-8">
                   <div class="row my-4 text-white text-center">
-                      <h3 class="home-container-10-header">Have a concern?</h3>
-                      <p class="home-container-10-body">Then, contact Us so that we can discuss the details!</p>
+                      <h3 class="home-container-10-header" data-aos="fade-up">Have a concern?</h3>
+                      <p class="home-container-10-body" data-aos="fade-up">Then, contact Us so that we can discuss the details!</p>
                   </div>
                   <div class="row justify-content-center mb-5">
-                      <div class="home-container-10-form-container">   
-                          <form id="form" class="d-flex gap-0"action="https://script.google.com/macros/s/AKfycbxKb7LBJ7HkQNh9KiYUaPr0ZtCpuPGzVWyWBIfcW3fu1qiqkLKF5oUcX2cPXJ1d3mu6Rg/exec" method="POST">
-                              <input type="text" name="email" placeholder="Email Address" class="text-dark form-control rounded-0 rounded-start p-3">
-                              <button class="g-recaptcha btn btn-primary rounded-0 rounded-end p-3 px-5 col-4"
-                                  data-sitekey="6LfbT8YrAAAAAPWEr_EAGJItV-7fCoX5Zkgh6gv0"
-                                  data-callback="onSubmit"
-                                  data-action="submit">
-                                  <span class="home-container-10-button-text">Submit</span>
-                              </button>
-                              <script>
-                                   function onSubmit(token) {
-                                  const form = document.getElementById('form');
-                                  const formData = new FormData(form);
-                                  formData.append("g-recaptcha-response", token);
-
-                                  fetch(form.action, {
-                                    method: "POST",
-                                    body: formData
-                                  })
-                                  .then(res => res.text())
-                                  .then(data => {
-                                    alert("Email submitted successfully!");
-                                    console.log(data);
-                                  })
-                                  .catch(err => {
-                                    alert("Submission failed.");
-                                    console.error(err);
-                                  });
-                                }
-                              </script>
-                              <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                          </form>
+                      <div class="home-container-10-form-container" data-aos="zoom-in-up">   
+                        <form id="form" class="d-flex gap-0" action="https://script.google.com/macros/s/AKfycbxeBXS-1AJ-S56W_YP2Ok3VtET26N6eDX9ux37jPwN4j6FqMQ5Wa9pYLikN6uhQ9C3PhQ/exec" method="POST">
+                            <input type="text" name="email" placeholder="Email Address" class="text-dark form-control rounded-0 rounded-start p-3" required>
+                            <button type="submit" class="btn btn-primary rounded-0 rounded-end p-3 px-5 col-4">
+                                <span class="home-container-10-button-text">Submit</span>
+                            </button>
+                        </form>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <svg class="pl d-none" id="loader" width="240" height="240" viewBox="0 0 240 240">
+                                <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
+                                <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
+                                <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+                                <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+                            </svg>
+                        </div>
                       </div>
                   </div>
               </div>
@@ -374,6 +357,9 @@
             </ul>
             </div>
         </footer>
+    </div>
+     <div id="successMessage" class="slide-message">
+        Congrats on contacting us! We’ll email you shortly.
     </div>
 </body>
 </html>
