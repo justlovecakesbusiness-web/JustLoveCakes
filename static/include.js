@@ -250,18 +250,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  function onSubmit(token) {
-    // Append token to form before sending
-    const form = document.getElementById('form');
-    const formData = new FormData(form);
-    formData.append("g-recaptcha-response", token);
-    
-    fetch("https://script.google.com/macros/s/AKfycbz4DSh7usp0wtedHFbasN2N0rJvptc9oZ-BiD_DHV-4Bg3FHkY2wpwReZ9IRCzfQNn6yA/exec", {
-      method: "POST",
-      body: formData
-    }).then(res => res.text()).then(alert);
-  }
 });
 
   

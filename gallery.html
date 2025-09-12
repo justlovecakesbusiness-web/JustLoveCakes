@@ -784,6 +784,27 @@
                                   <span class="home-container-10-button-text">Submit</span>
                               </button>
                               <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                              <script>
+                                   function onSubmit(token) {
+                                  const form = document.getElementById('form');
+                                  const formData = new FormData(form);
+                                  formData.append("g-recaptcha-response", token);
+
+                                  fetch(form.action, {
+                                    method: "POST",
+                                    body: formData
+                                  })
+                                  .then(res => res.text())
+                                  .then(data => {
+                                    alert("Email submitted successfully!");
+                                    console.log(data);
+                                  })
+                                  .catch(err => {
+                                    alert("Submission failed.");
+                                    console.error(err);
+                                  });
+                                }
+                              </script>
                           </form>
                       </div>
                   </div>
