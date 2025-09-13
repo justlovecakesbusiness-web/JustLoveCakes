@@ -6,6 +6,7 @@ html, body {
   overscroll-behavior: contain;
   touch-action: pan-x pan-y;
   overflow-x: hidden;
+  zoom:1;
 }
 body {
   --heading-font: "Euphoria Script", Georgia, serif;
@@ -159,8 +160,8 @@ input.form-control:focus {
   align-items: center;
 }
 .home-container-1-img{
-  width: clamp(350px, 35vw, 425px);             
-  height: clamp(350px, 35vw, 425px);               
+  width: clamp(300px, 30vw, 350px);             
+  height: clamp(300px, 30vw, 350px);               
   object-fit: cover; 
   display: block;   
 }
