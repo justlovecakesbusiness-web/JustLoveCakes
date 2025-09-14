@@ -2,6 +2,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('asset/Poppins/Poppins-Light.ttf') format('woff2');
+}
+@font-face {
+  font-family: 'Euphoria Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('asset/Euphoria_Script/EuphoriaScript-Regular.ttf') format('woff2');
+}
+
 html, body {
   overscroll-behavior: contain;
   touch-action: pan-x pan-y;
@@ -40,7 +55,7 @@ body {
   --bs-dark-rgb: 33, 37, 41;
   margin: 0;
   padding: 0;
-  background-color: var(--bs-light);
+  background-color: #fcfafa;
 }
 
 /* prevent select */
@@ -69,6 +84,9 @@ a, button{
   font-family: var(--body-font);
   text-decoration: none;
   transition: all 0.3s ease-out;
+}
+.ratio{
+  aspect-ratio: auto 160 / 80;
 }
 
 
@@ -431,6 +449,7 @@ input.form-control:focus {
   color: var(--text-black) !important;
 }
 .home-container-9-header{
+  color: var(--text-black) !important;
   text-align: center;
   font-size: clamp(24px, 5vw, 48px);
   margin: clamp(16px, 3vw, 24px) 0;
@@ -450,6 +469,9 @@ input.form-control:focus {
 .accordion-body{
   color: var(--text-black) !important;
   font-size: clamp(10px, 3vw, 16px);
+}
+.accordion-item{
+  background-color: transparent !important;
 }
 
 /* home-container-10 */
@@ -475,6 +497,7 @@ input.form-control:focus {
 /* Footer */
 .home-footer{
   padding: clamp(50px, 10vw, 100px) 0 0;
+  background-color: transparent;
 }
 .footer-img{
   height: 90%;

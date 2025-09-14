@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Just Love Cakes</title>
+    <title>Just Love Cakes Gallery</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="author" content="Made by Gabriel Eric I. Tope: https://github.com/gab192727">
     <meta name="keywords" content="Cakes, Bakery, Shop, Philippines, Customized Cakes, Pastries, Sweets, Desserts">
-
     <meta name="description" content="Brings you the best, from cakes to pastries, all made with love and meant to be shared.">
+    
     <link rel="icon" href="static/asset/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/plugin.css">
 
-    <link href="static/styles.css" rel="stylesheet">
-    <link href="static/plugin.css" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"  rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="static/include.js"></script>
-    <script src="static/plugin.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js" defer></script>
+    <script src="node_modules/aos/dist/aos.js" defer></script>
+    <script src="static/include.js" defer></script>
+    <script src="static/plugin.js" defer></script>
   </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +83,7 @@
             <div class="container-fluid">
                 <!-- Navbar brand -->
                 <div data-aos="fade-right">
-                    <a class="navbar-brand nav-link" target="_blank" href="/" >
+                    <a class="navbar-brand nav-link" target="_blank" href="/" aria-label="Just Love Cakes" title="Just Love Cakes Home">
                         <img src="static/asset/favicon.ico" alt="justlovecakes" width="32px">
                         Just Love Cakes
                     </a>
@@ -100,20 +94,20 @@
                 <div class="collapse navbar-collapse" id="navBar">
                     <ul class="navbar-nav me-auto" data-aos="fade-right">
                         <li class="nav-item ">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" href="#" aria-current="page" aria-label="Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="gallery.html" rel="nofollow">Gallery</a>
+                            <a class="nav-link" href="gallery.html" rel="nofollow" aria-label="Gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html" rel="nofollow">About</a>
+                            <a class="nav-link" href="about.html" rel="nofollow" aria-label="About">About</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav list-inline" data-aos="fade-left">
-                        <li class="me-4"><a class="text-muted" href="mailto:justlovecakesbusiness@gmail.com?subject=Custom%20Cake%20Order&body=Hi%20Just%20Love%20Cakes%2C%0AI%27d%20like%20to%20order..."><svg class="bi" width="20" height="20" fill="currentColor"><use xlink:href="#mail"></use></svg></a></li>
-                        <li class="me-4"><a class="text-muted " href="https://m.me/justlovecakes00"><svg class="bi" width="20" height="20" fill="currentColor"><use xlink:href="#messenger"></use></svg></a></li>
-                        <li class="me-4"><a class="text-muted" href="https://www.instagram.com/just.lovecakes"><svg class="bi" width="20" height="20" fill="currentColor"><use xlink:href="#instagram"></use></svg></a></li>
-                        <li class="me-4"><a class="text-muted" href="https://www.facebook.com/justlovecakes00"><svg class="bi" width="20" height="20" fill="currentColor"><use xlink:href="#facebook"></use></svg></a></li>
+                        <li class="me-4"><a class="text-muted" aria-label="Email Us" title="Email Us!"  href="mailto:justlovecakesbusiness@gmail.com?subject=Custom%20Cake%20Order&body=Hi%20Just%20Love%20Cakes%2C%0AI%27d%20like%20to%20order..."><svg class="bi" width="20" height="20" fill="currentColor"><use xlink:href="#mail"></use></svg></a></li>
+                        <li class="me-4"><a class="text-muted" aria-label="Chat Us" title="Chat Us!" href="https://m.me/justlovecakes00"><svg class="bi" width="20" height="20" fill="currentColor"><use xlink:href="#messenger"></use></svg></a></li>
+                        <li class="me-4"><a class="text-muted" aria-label="Follow Us" title="Follow Us!" href="https://www.instagram.com/just.lovecakes"><svg class="bi" width="20" height="20" fill="currentColor"><use xlink:href="#instagram"></use></svg></a></li>
+                        <li class="me-4"><a class="text-muted" aria-label="Follow Us" title="Follow Us!" href="https://www.facebook.com/justlovecakes00"><svg class="bi" width="20" height="20" fill="currentColor"><use xlink:href="#facebook"></use></svg></a></li>
                     </ul>
                 </div>
             </div>
@@ -123,15 +117,15 @@
     <div id="after-hero-sentinel" aria-hidden="true"></div> 
 
     <section class="home-container-1 noselect jarallax" data-dark="true"> 
-        <img class="jarallax-img" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="" />
+        <img class="jarallax-img ratio" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="background" />
           <div data-aos="fade-down" class="d-flex flex-column align-items-center justify-content-center">
-            <img class="home-container-1-img" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/favicon.webp?width=1000&format=webp" alt="logo">
+            <img class="home-container-1-img" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/favicon.webp?width=400&format=webp" alt="logo">
             <h1 class="home-container-1-header">
                 <span style="color:#f2c46e">Just</span>
                 <span style="color:#db5275">Love</span>
                 <span style="color:#5e3710">Cakes</span>
             </h1>
-            <a href="#form-section" class="btn btn-primary rounded-pill px-5 py-3 mt-3 mb-5 text-uppercase">Contact Us!</a>
+            <a href="#form-section" class="btn btn-primary rounded-pill px-5 py-3 mt-3 mb-5 text-uppercase" aria-label="Go to form section">Contact Us!</a>
           </div>
     </section>
 
@@ -153,7 +147,7 @@
                     <div class="swiper-slide">
                         <div class="product-item">
                             <figure class="home-container-3-figure noselect">
-                                     <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-1.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
+                                     <img alt="Product-Slides" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-1.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
                             </figure>
                             <div class="text-comtent d-flex justify-content-center align-items-center mt-2 mt-sm-1">
                                 <h2 class="fw-normal mb-2 home-container-3-text text-center text-wrap">3-tier Wedding Cake</h2>
@@ -163,7 +157,7 @@
                     <div class="swiper-slide">
                         <div class="product-item">
                             <figure class="home-container-3-figure noselect">
-                                <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-2.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
+                                <img alt="Product-Slides" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-2.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
                             </figure>
                             <div class="text-comtent d-flex justify-content-center align-items-center mt-2 mt-sm-1">
                                 <h2 class=" fw-normal mb-2 home-container-3-text">Butterfly Themed Cake</h2>
@@ -173,7 +167,7 @@
                     <div class="swiper-slide">
                         <div class="product-item">
                             <figure class="home-container-3-figure noselect">
-                                <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-3.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
+                                <img alt="Product-Slides" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-3.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
                             </figure>
                             <div class="text-comtent d-flex justify-content-center align-items-center mt-2 mt-sm-1">
                                 <h2 class=" fw-normal mb-2 home-container-3-text">One Piece Fondant Cake</h2>
@@ -183,7 +177,7 @@
                     <div class="swiper-slide">
                         <div class="product-item">
                             <figure class="home-container-3-figure noselect">
-                                <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-4.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
+                                <img alt="Product-Slides" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-4.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
                             </figure>
                             <div class="text-comtent d-flex justify-content-center align-items-center mt-2 mt-sm-1">
                                 <h2 class=" fw-normal mb-2 home-container-3-text">3-tier White Rose Cake</h2>
@@ -193,7 +187,7 @@
                     <div class="swiper-slide">
                         <div class="product-item">
                             <figure class="home-container-3-figure noselect">
-                                <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-5.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
+                                <img alt="Product-Slides" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-5.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
                             </figure>
                             <div class="text-comtent d-flex justify-content-center align-items-center mt-2 mt-sm-1">
                                 <h2 class=" fw-normal mb-2 home-container-3-text">3-tier Anniversary Cake</h2>
@@ -204,7 +198,7 @@
                     <div class="swiper-slide">
                         <div class="product-item">
                             <figure class="home-container-3-figure noselect">
-                                <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-6.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
+                                <img alt="Product-Slides" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-6.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
                             </figure>
                             <div class="text-comtent d-flex justify-content-center align-items-center mt-2 mt-sm-1">
                                 <h2 class=" fw-normal mb-2 home-container-3-text">3-tier Bicolor Rose Cake</h2>
@@ -215,7 +209,7 @@
         <div class="swiper-slide">
                         <div class="product-item">
                             <figure class="home-container-3-figure noselect">
-                                <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-7.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
+                                <img alt="Product-Slides" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-7.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
                             </figure>
                             <div class="text-comtent d-flex justify-content-center align-items-center mt-2 mt-sm-1">
                                 <h2 class=" fw-normal mb-2 home-container-3-text">4-tier Doll Themed Cake</h2>
@@ -227,7 +221,7 @@
                     <div class="swiper-slide">
                         <div class="product-item">
                             <figure class="home-container-3-figure noselect">
-                                <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-8.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
+                                <img alt="Product-Slides" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-8.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
                             </figure>
                             <div class="text-comtent d-flex justify-content-center align-items-center mt-2 mt-sm-1">
                                 <h2 class=" fw-normal mb-2 home-container-3-text">3-tier Rose Cake</h2>
@@ -237,7 +231,7 @@
                     <div class="swiper-slide">
                         <div class="product-item">
                             <figure class="home-container-3-figure noselect">
-                                <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-9.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
+                                <img alt="Product-Slides" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-9.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
                             </figure>
                             <div class="text-comtent d-flex justify-content-center align-items-center mt-2 mt-sm-1">
                                 <h2 class=" fw-normal mb-2 home-container-3-text">Demon Slayer Cake</h2>
@@ -247,7 +241,7 @@
                     <div class="swiper-slide">
                         <div class="product-item">
                             <figure class="home-container-3-figure noselect">
-                                <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-10.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
+                                <img alt="Product-Slides" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Product-Slides-10.jpg?width=400&format=webp" class="img-fluid home-container-3-img">
                             </figure>
                             <div class="text-comtent d-flex justify-content-center align-items-center mt-2 mt-sm-1">
                                 <h2 class=" fw-normal mb-2 home-container-3-text">Number Cake</h2>
@@ -271,7 +265,7 @@
     </section>
 
     <section class="home-container-4 py-5 my-3 my-sm-5 jarallax" data-dark="true">
-        <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="banner" class="noselect jarallax-img">
+        <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="banner" class="noselect jarallax-img ratio">
         <div class="container ">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-white py-5 my-5">
@@ -285,7 +279,7 @@
                         Crafted with care, our cakes is more than just dessert, it’s a statement. Designed to impress with its timeless style and delicate details, this cake is perfect for weddings, anniversaries, and life’s most unforgettable celebrations.
                     </p>
                     <div class="d-flex align-items-center justify-content-center" data-aos="fade-up">
-                        <a href="gallery.html" class="btn btn-primary rounded-pill px-5 py-3 mt-3 fs-6">Gallery</a>
+                        <a href="gallery.html" class="btn btn-primary rounded-pill px-5 py-3 mt-3 fs-6" aria-label="Go to Gallery">Gallery</a>
                     </div>
                 </div>
             </div>
@@ -475,19 +469,19 @@
                 Got a sweet craving or a custom cake idea?  Send us a message anytime through our social media pages — we’d love to chat and make your celebration extra special.
             </p>
             <div class="social-media-icon-container d-flex justify-content-between align-items-center" data-aos="fade-up"  id="form-section">
-                <a href="https://www.facebook.com/justlovecakes00">
+                <a href="https://www.facebook.com/justlovecakes00" aria-label="Go to our Facebook" title="Go to our Facebook">
                      <svg class="bi social-media-icon"><use xlink:href="#facebook"></use></svg>
                 </a>
-                <a href="https://www.instagram.com/just.lovecakes/">
+                <a href="https://www.instagram.com/just.lovecakes/" aria-label="Go to our Instagram" title="Go to our Instagram">
                     <svg class="bi social-media-icon"><use xlink:href="#instagram"></use></svg>
                 </a>
-                <a href="https://ph.pinterest.com/justlovecakesbusiness/">
+                <a href="https://ph.pinterest.com/justlovecakesbusiness/" aria-label="Go to our Pinterest" title="Go to our Pinterest">
                     <svg class="bi social-media-icon"><use xlink:href="#pinterest"></use></svg>
                 </a>
-                <a href="https://www.tiktok.com/@justlovecakes">
+                <a href="https://www.tiktok.com/@justlovecakes" aria-label="Go to our Tiktok" title="Go to our Tikrok">
                     <svg class="bi social-media-icon"><use xlink:href="#tiktok"></use></svg>
                 </a>
-                <a href="https://x.com/JustLoveCakes00">
+                <a href="https://x.com/JustLoveCakes00" aria-label="Go to our X/Twitter" title="Go to our X/Twitter">
                     <svg class="bi social-media-icon"><use xlink:href="#twitter"></use></svg>
                 </a>
             </div>
@@ -496,11 +490,11 @@
 
     
     <section class="home-container-10 newsletter bg-black jarallax" data-dark="true">
-        <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="newsletter" class="noselect jarallax-img">
+        <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="background" class="noselect jarallax-img ratio">
         <div class="container">
             <div class="row justify-content-center py-5">
                 <div class="col-md-8">
-                    <div class="row my-4 text-white text-center">
+                    <div class="row my-4 text-white text-center d-flex flex-column justify-content-center align-items-center">
                         <h3 class="home-container-10-header" data-aos="fade-up">Want a Customized Cake?</h3>
                         <p class="home-container-10-body" data-aos="fade-up">Contact us so that we can discuss the details!</p>
                     </div>
@@ -530,7 +524,7 @@
     </section>
 
 
-    <section class="home-container-9" data-dark="false">
+    <section class="home-container-9 px-1 px-sm-2" data-dark="false">
         <h1 class="home-container-9-header  my-3" data-aos="fade-up">Frequently Asked Questions</h1>
         <div class="accordion accordion-flush" id="accordionFlush" >
             <div class="accordion-item" data-aos="fade-up">
@@ -579,11 +573,11 @@
     </section>
 
     <div class="jarallax">
-         <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="banner" class="jarallax-img footer-img">
+         <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="background" class="jarallax-img footer-img ratio">
            <footer class="home-footer row row-cols-4 row-cols-sm-5 border-top">
             <div class="col align-items-center">
-                <a href="#" class="d-flex align-items-center justify-content-center ml-auto mb-3 link-dark text-decoration-none">
-                    <img class="w-75" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Logo transparent.webp?width=100&format=webp" alt="">
+                <a href="#" class="d-flex align-items-center justify-content-center ml-auto mb-3 link-dark text-decoration-none" aria-label="Logo">
+                    <img class="w-75" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Logo transparent.webp?width=100&format=webp" alt="logo">
                 </a>
                 <p class="text-light text-center home-footer-text">Just Love Cakes © 2025</p>
             </div>
@@ -591,29 +585,29 @@
             <div class="col">
                 <h5 class="home-footer-header">Navigation</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" aria-current="page" class="nav-link p-0 text-light home-footer-text">Home</a></li>
-                    <li class="nav-item mb-2"><a href="gallery.html" class="nav-link p-0 text-light home-footer-text">Gallery</a></li>
-                    <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-light home-footer-text">About</a></li>
+                    <li class="nav-item mb-2"><a href="#" aria-current="page" aria-label="Home" class="nav-link p-0 text-light home-footer-text">Home</a></li>
+                    <li class="nav-item mb-2"><a href="gallery.html" aria-label="Gallery" class="nav-link p-0 text-light home-footer-text">Gallery</a></li>
+                    <li class="nav-item mb-2"><a href="about.html" aria-label="About" class="nav-link p-0 text-light home-footer-text">About</a></li>
                 </ul>
             </div>
 
             <div class="col">
             <h5 class="home-footer-header">Contact Us</h5>
             <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="https://m.me/justlovecakes00" class="nav-link p-0 text-light home-footer-text">Messenger</a></li>
-                <li class="nav-item mb-2"><a href="https://wa.me/639924773480" class="nav-link p-0 text-light home-footer-text">Whatsapp</a></li>
-                <li class="nav-item mb-2"><a href="mailto:justlovecakesbusiness@gmail.com?subject=Custom%20Cake%20Order&body=Hi%20Just%20Love%20Cakes%2C%0AI%27d%20like%20to%20order..." class="nav-link p-0 text-light home-footer-text">Email</a></li>
+                <li class="nav-item mb-2"><a href="https://m.me/justlovecakes00" aria-label="Messenger" class="nav-link p-0 text-light home-footer-text">Messenger</a></li>
+                <li class="nav-item mb-2"><a href="https://wa.me/639924773480" aria-label="Whatsapp"  class="nav-link p-0 text-light home-footer-text">Whatsapp</a></li>
+                <li class="nav-item mb-2"><a href="mailto:justlovecakesbusiness@gmail.com?subject=Custom%20Cake%20Order&body=Hi%20Just%20Love%20Cakes%2C%0AI%27d%20like%20to%20order..." aria-label="Mail"  class="nav-link p-0 text-light home-footer-text">Email</a></li>
             </ul>
             </div>
 
             <div class="col">
             <h5 class="home-footer-header">Follow Us</h5>
             <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="https://www.facebook.com/justlovecakes00" class="nav-link p-0 text-light home-footer-text">Facebook</a></li>
-                <li class="nav-item mb-2"><a href="https://www.instagram.com/just.lovecakes/" class="nav-link p-0 text-light home-footer-text">Instagram</a></li>
-                <li class="nav-item mb-2"><a href="https://ph.pinterest.com/justlovecakesbusiness/" class="nav-link p-0 text-light home-footer-text">Pinterest</a></li>
-                <li class="nav-item mb-2"><a href="https://www.tiktok.com/@justlovecakes" class="nav-link p-0 text-light home-footer-text">Tiktok</a></li>
-                <li class="nav-item mb-2"><a href="https://x.com/JustLoveCakes00" class="nav-link p-0 text-light home-footer-text">X / Twitter</a></li>
+                <li class="nav-item mb-2"><a href="https://www.facebook.com/justlovecakes00" aria-label="Facebook" class="nav-link p-0 text-light home-footer-text">Facebook</a></li>
+                <li class="nav-item mb-2"><a href="https://www.instagram.com/just.lovecakes/" aria-label="instagram" class="nav-link p-0 text-light home-footer-text">Instagram</a></li>
+                <li class="nav-item mb-2"><a href="https://ph.pinterest.com/justlovecakesbusiness/" aria-label="pinterest"  class="nav-link p-0 text-light home-footer-text">Pinterest</a></li>
+                <li class="nav-item mb-2"><a href="https://www.tiktok.com/@justlovecakes" aria-label="tiktok"  class="nav-link p-0 text-light home-footer-text">Tiktok</a></li>
+                <li class="nav-item mb-2"><a href="https://x.com/JustLoveCakes00" aria-label="X/twitter"  class="nav-link p-0 text-light home-footer-text">X / Twitter</a></li>
             </ul>
             </div>
         </footer>
@@ -623,3 +617,10 @@
         </div>
 </body>
 </html>
+
+            <!-- USE 'Just Love Cakes Est. 2020' instead of 'Just Love Cakes  © 2025' 
+             
+            
+            
+        
+            -->

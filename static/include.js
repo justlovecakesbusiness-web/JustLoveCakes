@@ -256,8 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .then(res => res.text())
     .then(data => {
-     
-      console.log(data);
       form.reset();
       form.classList.toggle("d-none")
       loader.classList.toggle("d-none")
@@ -280,11 +278,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const rect = section.getBoundingClientRect();
       if (rect.top <= navHeight && rect.bottom >= navHeight) {
         if (section.getAttribute("data-dark") === "false") {
-           nav.classList.remove("isdark");
+          nav.classList.remove("isdark");
           nav.classList.add("islight");
         } else {
-         nav.classList.remove("islight");
-          console.log("isdark")
+          nav.classList.remove("islight");
           nav.classList.add("isdark");
         }
       }
