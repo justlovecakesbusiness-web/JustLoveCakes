@@ -87,6 +87,8 @@ a, button{
 }
 .ratio{
   aspect-ratio: auto 160 / 80;
+  width: 100%;
+  height: auto;
 }
 
 
@@ -495,6 +497,9 @@ input.form-control:focus {
 }
 
 /* Footer */
+.footer-custom{
+  background-color: rgba(0, 0, 0, 0.9); /* dark overlay */
+}
 .home-footer{
   padding: clamp(50px, 10vw, 100px) 0 0;
   background-color: transparent;

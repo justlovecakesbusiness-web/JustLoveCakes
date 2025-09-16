@@ -11,10 +11,12 @@
     <meta name="description" content="Brings you the best, from cakes to pastries, all made with love and meant to be shared.">
     
     <link rel="icon" href="static/asset/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
-    <link rel="stylesheet" href="static/plugin.css">
-    <link rel="stylesheet" href="static/styles.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" as="image">
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" as="image">
+    <link rel="preload" href="/static/plugin.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/static/plugin.css"></noscript>
+    <link rel="preload" href="/static/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/static/styles.css"></noscript>
     <script src="static/plugin.js" defer></script>
     <script src="static/include.js" defer></script>
   </head>
@@ -111,7 +113,7 @@
     <div id="after-hero-sentinel" aria-hidden="true"></div> 
 
     <section class="home-container-1 noselect jarallax" data-dark="true" > 
-        <img class="jarallax-img ratio" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="background" />
+        <img class="jarallax-img ratio" width="1600" height="800" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="background" />
         <div data-aos="fade-down" class="d-flex flex-column align-items-center justify-content-center">
           <img class="home-container-1-img" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/favicon.webp?width=400&format=webp" alt="logo">
           <h1 class="home-container-1-header">
@@ -136,7 +138,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-1.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-1.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                 <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                 </div>
@@ -145,7 +147,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-2.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-2.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                 <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                 </div>
@@ -154,7 +156,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-3.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-3.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                 <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                 </div>
@@ -163,7 +165,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-4.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-4.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                 <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                 </div>
@@ -172,7 +174,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-5.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-5.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                 <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                 </div>
@@ -181,7 +183,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-6.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-6.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                 <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                 </div>
@@ -190,7 +192,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-7.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-7.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -199,7 +201,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-8.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-8.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -209,7 +211,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-9.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-9.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -218,7 +220,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-10.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-10.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -227,7 +229,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-11.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-11.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -236,7 +238,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-12.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Galley-3tier/3-tier-Gallery-12.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -275,7 +277,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-1.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-1.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -284,7 +286,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-2.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-2.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -293,7 +295,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-3.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-3.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -302,7 +304,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-4.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-4.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -311,7 +313,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-5.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-5.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -320,7 +322,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-6.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-6.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -329,7 +331,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-7.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-7.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -339,7 +341,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-8.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-8.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -349,7 +351,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-9.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-9.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -358,7 +360,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-10.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-10.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -367,7 +369,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-11.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-11.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -376,7 +378,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-12.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-2tier/2-tier-Gallery-12.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -415,7 +417,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/1.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/1.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -424,7 +426,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/2.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/2.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -433,7 +435,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/3.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/3.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -442,7 +444,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/4.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/4.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -451,7 +453,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/5.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/5.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -460,7 +462,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/6.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/6.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -469,7 +471,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/7.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/7.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -479,7 +481,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/8.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/8.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -489,7 +491,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/9.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/9.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -498,7 +500,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/10.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/10.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -507,7 +509,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/11.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/11.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -516,7 +518,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/12.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/12.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -526,7 +528,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/13.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-1tier/13.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -581,7 +583,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/1.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/1.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -590,7 +592,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/2.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/2.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -599,7 +601,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/3.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/3.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -608,7 +610,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/4.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/4.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -617,7 +619,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/5.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/5.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -626,7 +628,7 @@
               <div class="swiper-slide">
                 <div class="product-item">
                   <figure class="product-image gallery-figure">
-                    <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/6.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                    <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/6.jpg?width=400&format=webp" class="img-fluid gallery-images">
                   </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -635,7 +637,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/7.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/7.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -645,7 +647,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/8.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/8.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -655,7 +657,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/9.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/9.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -664,7 +666,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/10.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/10.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -673,7 +675,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/11.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/11.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -682,7 +684,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/12.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/12.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -692,7 +694,7 @@
             <div class="swiper-slide">
               <div class="product-item">
                 <figure class="product-image gallery-figure">
-                  <img alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/13.jpg?width=400&format=webp" class="img-fluid gallery-images">
+                  <img loading="lazy" alt="product-slide" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Gallery-sculpted/13.jpg?width=400&format=webp" class="img-fluid gallery-images">
                 </figure>
                   <div class="text-comtent d-flex justify-content-center align-items-center mt-3">
                   </div>
@@ -726,7 +728,7 @@
   </section>
       
   <section class="home-container-10 newsletter bg-black jarallax" data-dark="true">
-      <img alt="product-slide ratio" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="newsletter" class="noselect jarallax-img">
+      <img alt="product-slide ratio" width="1600" height="800" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="newsletter" class="noselect jarallax-img">
       <div class="container">
           <div class="row justify-content-center py-5">
               <div class="col-md-8">
@@ -804,15 +806,15 @@
         </div>
     </div>
   </section>
-
-    <div class="jarallax">
-         <img src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" alt="background" class="jarallax-img footer-img ratio">
-           <footer class="home-footer row row-cols-4 row-cols-sm-5 border-top">
+  <section class="footer-custom">
+      <div class="jarallax">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/background.webp?width=1000&format=webp" width="1600" height="800" alt="background" class="jarallax-img footer-img ratio">
+          <footer class="home-footer row row-cols-4 row-cols-sm-5 border-top">
             <div class="col align-items-center">
                 <a href="#" class="d-flex align-items-center justify-content-center ml-auto mb-3 link-dark text-decoration-none" aria-label="Logo">
-                    <img class="w-75" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Logo transparent.webp?width=100&format=webp" alt="logo">
+                    <img loading="lazy" class="w-75" src="https://cdn.jsdelivr.net/gh/justlovecakesbusiness-web/just-love-cakes-assets/Logo transparent.webp?width=100&format=webp" alt="logo">
                 </a>
-                <p class="text-light text-center home-footer-text">Just Love Cakes © 2025</p>
+                <p class="text-light text-center home-footer-text">Just Love Cakes Est. 2020</p>
             </div>
             <div class="col d-none d-sm-block"></div>
             <div class="col">
@@ -843,18 +845,11 @@
                 <li class="nav-item mb-2"><a href="https://x.com/JustLoveCakes00" aria-label="X/twitter"  class="nav-link p-0 text-light home-footer-text">X / Twitter</a></li>
             </ul>
             </div>
-        </footer>
-    </div>
-  <div id="successMessage" class="slide-message">
-    Congrats on contacting us! We’ll email you shortly.
-  </div>
+          </footer>
+      </div>
+      <div id="successMessage" class="slide-message">
+        Congrats on contacting us! We’ll email you shortly.
+      </div>
+  </section>
 </body>
 </html>
-
-
-            <!-- USE 'Just Love Cakes Est. 2020' instead of 'Just Love Cakes  © 2025' 
-             
-            
-            
-        
-            -->
